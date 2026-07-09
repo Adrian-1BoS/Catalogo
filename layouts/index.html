@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <h1>Catálogo Artesanal</h1>
+  <h2 style="font-size: 1rem;">Todos produtos sob encomenda. Se quiser nos chamar para um pedido personalizado, estamos a disposição.</h2>
+</header>
+
+{{ range $categoria, $produtos := hugo.Data.produtos }}
+  <h2 style="margin-top: 2rem; border-bottom: 1px solid #6d6d6d; padding-bottom: 0.5rem; text-transform: capitalize;">
+    {{ replace $categoria "_" " " }}
+  </h2>
+  
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 1rem;">
+    {{ range $produtos }}
+      {{ $item := . }} {{/* Captura o produto atual em uma variável */}}
+      
+      <div style="flex: 1 1 250px; border: 1px solid #333; padding: 15px; border-radius: 8px; display: flex; flex-direction: column;">
+        
+        <div style="display: flex; gap: 10px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 10px; max-width: 100%; scrollbar-width: none;">
+          <style>
+            div::-webkit-scrollbar { display: none; }
+          </style>
+          {{ range .imagem }}
+            {{ $img := resources.Get (printf "images/%s" .) }}
+            <a href="{{ if $img }}{{ $img.RelPermalink }}{{ else }}/images/{{ . }}{{ end }}" target="_blank" style="flex: 0 0 auto; scroll-snap-align: center;">
+              {{ if $img }}
+                {{ $proc := $img.Fit "200x200 Center" }}
+                <img src="{{ $proc.RelPermalink }}" alt="Foto do produto" 
+                     style="width: 200px; height: 200px; object-fit: contain; border-radius: 4px; border: 1px solid #555; background-color: #2a2a2a; display: block;">
+              {{ else }}
+                <img src="/images/{{ . }}" alt="Foto do produto" 
+                     style="width: 200px; height: 200px; object-fit: contain; border-radius: 4px; border: 1px solid #555; background-color: #2a2a2a; display: block;">
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+        
+        <h3 style="margin: 0 0 5px 0;">{{ $item.nome }}</h3>
+        <p style="font-size: 0.9em; color: #888; margin-bottom: 10px;">{{ $item.descricao }}</p>
+        <p style="font-weight: bold; margin-bottom: 15px;">R$ {{ printf "%.2f" $item.preco }}</p>
+        
+        <a href="https://wa.me/5511941662053?text=Olá! Gostei do {{ $item.nome }}" 
+           style="margin-top: auto; display: block; text-align: center; background: #22c55e; color: white; padding: 8px; border-radius: 4px; text-decoration: none;">
+           Pedir no WhatsApp
+        </a>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,13 @@
+baseURL = '/'
+locale = 'pt-br'
+title = 'Catálogo Artesanal'
+theme = 'papermod'
+
+[params]
+  homeInfoParams = {Title = "Nossos Produtos Artesanais", Content = "Feito à mão."}
+
+[menu]
+  [[menu.main]]
+    name = "Produtos"
+    url = "/"
+    weight = 1

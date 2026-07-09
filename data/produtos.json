@@ -1,0 +1,170 @@
+{
+    "Amigurumis": [
+        {
+            "id": "AM001",
+            "nome": "Nossa Senhora",
+            "categoria": "Amigurumis",
+            "preco": 100.00,
+            "custo_estimado": 50.00,
+            "imagem": ["nossa_senhora.png", "nossa_senhora2.png"],
+            "descricao": "Feito com linha 100% algodão, enchimento hipoalergênico.",
+            "disponivel": true
+        },
+        {
+            "id": "AM002",
+            "nome": "Bob Esponja",
+            "categoria": "Amigurumis",
+            "preco": 100.00,
+            "custo_estimado": 50.00,
+            "imagem": ["bob_esponja.png"],
+            "descricao": "Feito com linha 100% algodão, enchimento hipoalergênico.",
+            "disponivel": true
+        },
+        {
+            "id": "AM003",
+            "nome": "Stitch",
+            "categoria": "Amigurumis",
+            "preco": 100.00,
+            "custo_estimado": 50.00,
+            "imagem": ["stitch.png"],
+            "descricao": "Feito com linha 100% algodão, enchimento hipoalergênico.",
+            "disponivel": true
+        },
+        {
+            "id": "AM004",
+            "nome": "Menininha",
+            "categoria": "Amigurumis",
+            "preco": 100.00,
+            "custo_estimado": 50.00,
+            "imagem": ["menininha.png"],
+            "descricao": "Feito com linha 100% algodão, enchimento hipoalergênico.",
+            "disponivel": true
+        }
+    ],
+    "Vasos": [
+        {
+            "id": "VM001",
+            "nome": "Vaso de Flores Abre e Fecha",
+            "categoria": "Vasos",
+            "preco": 60.00,
+            "custo_estimado": 20.00,
+            "imagem": ["Flor_salto.png","Flor_salto2.png"],
+            "descricao": "Arranjo delicado com miçangas importadas, ideal para centros de mesa.",
+            "disponivel": true
+        },
+        {
+            "id": "VM002",
+            "nome": "Vaso de Flores Botão",
+            "categoria": "Vasos",
+            "preco": 60.00,
+            "custo_estimado": 40.00,
+            "imagem": ["Flor_botao2.png", "Flor_botao.png"],
+            "descricao": "Arranjo delicado com miçangas importadas, ideal para centros de mesa.",
+            "disponivel": true
+        }
+    ],
+    "Pano_de_prato": [
+        {
+            "id": "PP001",
+            "nome": "Pano de Prato Borboletas",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["borboleta_azul.png", "borboleta_azul2.png", "borboleta_azul3.png", "borboleta_rosa.png", "borboleta_rosa2.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP002",
+            "nome": "Pano de Prato Flor de Cerejeira",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["flor_coração.png", "flor_coração2.jpg", "flor_coração3.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP003",
+            "nome": "Pano de Prato Pequena Maria",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["maria.png", "maria2.png", "maria_vermelha.png", "maria_vermelha2.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP004",
+            "nome": "Pano de Prato Rebeca",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["rebeca.png", "rebeca2.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP005",
+            "nome": "Pano de Prato Moranguinho na Horta",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["moranguinho.png", "moranguinho2.png", "moranguinho_3.png", "moranguinho_3_2.png", "moranguinho_morangos.png", "moranguinho_morangos2.png", "moranguinho_morangos3.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP006",
+            "nome": "Pano de Prato Moranguinho",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["moranguinho_2.png", "moranguinho_2_2.png", "moranguinho_2_3.png", "moranguinho_4.png", "moranguinho_4_2.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP007",
+            "nome": "Pano de Prato Unicornio",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["unicórnio.png", "unicórnio2.jpg"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP008",
+            "nome": "Pano de Prato Flor no Tronco",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["flor_arvore.png", "flor_arvore2.jpg"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        },
+        {
+            "id": "PP009",
+            "nome": "Pano de Prato Vaso de Flores",
+            "categoria": "Cozinha",
+            "preco": 50.00,
+            "custo_estimado": 30.00,
+            "imagem": ["vaso_florido.png", "vaso_florido2.png", "vaso_florido3.png"],
+            "descricao": "Pano pintado e bordador com traços unicos e muito carinho.",
+            "disponivel": false
+        }
+    ],
+    "Discos_pintados": [
+    {
+            "id": "DP001",
+            "nome": "Disco CD/DVD pintados",
+            "categoria": "Cozinha",
+            "preco": 30.00,
+            "custo_estimado": 10.00,
+            "imagem": ["deadpool.png", "entardecer.png", "Noite_roxa.png"],
+            "descricao": "Material reciclavel virou arte para salvar o meio ambiente, ajude voce tambem",
+            "disponivel": false
+        }
+    ]
+}
