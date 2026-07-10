@@ -14,7 +14,9 @@ theme = 'papermod'
     weight = 1
 
 [outputs]
-  home = ["HTML"]
+  home = ["HTML", "RSS"]
 
 [outputFormats.RSS]
+  mediaType = "application/rss+xml"
   path = "feed/index.xml"
+  rel = "alternate"
