@@ -1,4 +1,5 @@
 baseURL = 'https://adrian-1bos.github.io/Catalogo/'
+canonifyURLs = true
 locale = 'pt-br'
 title = 'Catálogo Artesanal'
 theme = 'papermod'
@@ -11,3 +12,9 @@ theme = 'papermod'
     name = "Produtos"
     url = "/"
     weight = 1
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  path = "feed/index.xml"
