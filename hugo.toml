@@ -12,11 +12,3 @@ theme = 'papermod'
     name = "Produtos"
     url = "/"
     weight = 1
-
-[outputs]
-  home = ["HTML", "RSS"]
-
-[outputFormats.RSS]
-  mediaType = "application/rss+xml"
-  path = "feed/index.xml"
-  rel = "alternate"

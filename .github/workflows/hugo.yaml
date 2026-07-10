@@ -18,10 +18,11 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-      - run: hugo --minify
+      - run: hugo --minify --baseURL "https://adrian-1bos.github.io/Catalogo/"
+      
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: './public'
+          path: 'public'
   deploy:
     needs: build
     runs-on: ubuntu-latest
