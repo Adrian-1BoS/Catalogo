@@ -13,12 +13,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: recursive 
 
       - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true
-      - run: hugo --minify --baseURL "https://adrian-1bos.github.io/Catalogo/"
+
+      - name: Build
+        run: hugo --minify --baseURL "https://adrian-1bos.github.io/Catalogo/"
       
       - uses: actions/upload-pages-artifact@v3
         with:
