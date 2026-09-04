@@ -161,7 +161,7 @@
             "nome": "Disco CD/DVD pintados",
             "categoria": "Cozinha",
             "preco": 10.00,
-            "custo_estimado": 10.00,
+            "custo_estimado": 6.00,
             "imagem": ["deadpool.png", "entardecer.png", "Noite_roxa.png"],
             "descricao": "Material reciclavel virou arte para salvar o meio ambiente, ajude voce tambem",
             "disponivel": false
